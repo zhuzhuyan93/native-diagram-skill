@@ -1,0 +1,54 @@
+{
+  "title": "AI Agent Architecture",
+  "subtitle": "A structured, editable systems diagram",
+  "direction": "TB",
+  "nodes": [
+    {
+      "id": "app",
+      "label": "Application Layer",
+      "subtitle": "Web · API · Mobile"
+    },
+    {
+      "id": "agent",
+      "label": "Agent Orchestration",
+      "subtitle": "Planner · Reasoner · Executor",
+      "accent": true
+    },
+    {
+      "id": "knowledge",
+      "label": "Knowledge Layer",
+      "subtitle": "RAG · Graph · Vector DB"
+    },
+    {
+      "id": "tools",
+      "label": "Tool Layer",
+      "subtitle": "MCP · Functions · APIs"
+    }
+  ],
+  "layers": [
+    [
+      "app"
+    ],
+    [
+      "agent"
+    ],
+    [
+      "knowledge",
+      "tools"
+    ]
+  ],
+  "edges": [
+    {
+      "from": "app",
+      "to": "agent"
+    },
+    {
+      "from": "agent",
+      "to": "knowledge"
+    },
+    {
+      "from": "agent",
+      "to": "tools"
+    }
+  ]
+}
